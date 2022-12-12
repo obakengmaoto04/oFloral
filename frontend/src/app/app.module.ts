@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavComponent } from './components/nav/nav.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     LogoComponent,
     MenuComponent,
-    NavbarComponent,
+    NavComponent,
     RegisterComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    NavComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule

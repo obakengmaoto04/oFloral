@@ -7,9 +7,10 @@ import { GuardService } from './service/guard.service';
 
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  {path:'',component:LoginComponent},
   { path: 'register', component: RegisterComponent },
-  {path:'home',component:HomeComponent,canActivate:[GuardService]},
+  {path:'home',component:HomeComponent},
+  // canActivate:[GuardService]
 
 ];
 
@@ -23,6 +24,5 @@ export class AppRoutingModule { }
 export class AppComponent {
   
   constructor() {}
-
 
 }

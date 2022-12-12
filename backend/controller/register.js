@@ -25,7 +25,7 @@ const createUser = (req, res) => {
       
       }else{
   
-        pool.query('INSERT INTO ofloralusers (surname,email,name,password) VALUES ($1,$2,$3,$4) RETURNING email',[surname,email,name,password],(error, results) => 
+        pool.query('INSERT INTO ofloralusers (email,phone number,password, confirm password ) VALUES ($1,$2,$3,$4) RETURNING email',[surname,email,name,password],(error, results) => 
         {
     
             if (error) 
