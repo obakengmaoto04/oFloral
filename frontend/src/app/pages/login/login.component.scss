@@ -1,20 +1,182 @@
-.gradient-custom-3 {
-    /* fallback for old browsers */
-    background: #FFFFFF;
+// .gradient-custom-3 {
+//     /* fallback for old browsers */
+//     background: #FFFFFF;
     
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+//     /* Chrome 10-25, Safari 5.1-6 */
+//     background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
     
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+//     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//     background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+//     }
+//     .gradient-custom-4 {
+//     /* fallback for old browsers */
+//     background: #FFFFFF;
+    
+//     /* Chrome 10-25, Safari 5.1-6 */
+//     background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+//     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//     background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+//     }
+
+
+.container1{
+
+    height:100vh;
+    
+    .header{
+        width: 100%;
+        height: auto;
+        margin-top: -2rem;
+       
+     
     }
-    .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #FFFFFF;
     
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    .circle1{
+        background-color: #565656;
+        width: 75%;
+        height: 11.2rem;
+       
+        border-radius: 0rem 0rem 45% 50%;
+        margin-left: -1.5rem;
     }
+    
+    .circle2{
+        background-color: rgba(255, 68, 51, 1);
+        width: 73%;
+        height: 9rem;
+        margin-left: 80%;
+        border-radius: 35% 0 50% 50%;
+        margin-top: -10px;
+        overflow: hidden;
+    
+    }
+    
+    .form{
+       
+        background-color: rgb(16, 97, 150);
+        margin-top: -3rem;
+    }
+    
+    section{
+        background-color: rgba(255, 68, 51, 1);
+    }
+    
+    .logo{
+        margin-left: 38%;
+        margin-right: 35%;
+        width: 5.5rem;
+        height: 4rem;
+        margin-right: 30%;
+        border-radius: 1rem;
+        border: solid;
+        background-color: white;
+        margin-top: -3.5rem;
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    
+    .img-fluid{
+      
+        position: relative;
+    }
+    
+    .sp{
+        font-size: 3px;
+        margin-top: -3rem;
+    }
+    
+    .form{
+        height:cover;
+    }
+    
+    .btn{
+        margin-right: 15%;
+        margin-left: 15%;
+        width: 80%;
+        height: 3rem;
+        background-color: rgba(255, 68, 51, 1);
+        border-radius: 3rem;
+        margin-top: 2rem;
+    
+    }
+    
+    .text-muted{
+    
+        float: right;
+        cursor: pointer;
+        
+    }
+    
+    .linki{
+    
+      float: right;
+       margin-left: 70%;
+       margin-top: 2rem;
+       margin-bottom: 0%;
+      color: rgba(255, 68, 51, 1);
+    
+    }
+    
+    .signinp{
+        color: white;
+        font-weight: bold;
+       
+    }
+    
+    
+    .input-group-text{
+        background-color: rgba(255, 68, 51, 1);
+        height: 4rem;
+        border-radius: 1rem 0 0 1rem ;
+       
+    }
+    
+    .bi{
+        color: white;
+        font-size: 1.1rem;
+    }
+    
+    span{
+        color: white;
+    }
+    
+    input{
+        border-color:black;
+        border-radius: 1rem;
+    
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+    @media (min-width: 0px) and (max-width: 768px) { 
+        .card{
+            border: none;
+            
+        }
+        .col-xl-10
+        {
+            padding: 0;
+        }
+        
+        .header{
+            width: 100%;
+            height: auto;
+            margin-top: -10rem;
+           
+         
+        }
+    
+    
+    }
+    
+    .img-fluid{
+        height: 46rem;
+       
+    }
+}
+

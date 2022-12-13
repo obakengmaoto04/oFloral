@@ -5,12 +5,11 @@ const pool = poolConnection;
 //Register fuction 
 const createUser = (req, res) => {
     
-    const {surname,email,name,password,confirm} = req.body; 
+    const {email,names,password,confirm} = req.body; 
 
    
      console.log(email)
-     console.log(surname)
-     console.log(name)
+     console.log(names)
     
     
   
@@ -25,7 +24,7 @@ const createUser = (req, res) => {
       
       }else{
   
-        pool.query('INSERT INTO ofloralusers (email,phone number,password, confirm password ) VALUES ($1,$2,$3,$4) RETURNING email',[surname,email,name,password],(error, results) => 
+        pool.query('INSERT INTO ofloralusers (email,names,password,confirm) VALUES ($1,$2,$3,$4) RETURNING email',[email,names,password,confirm],(error, results) => 
         {
     
             if (error) 

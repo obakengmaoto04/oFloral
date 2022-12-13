@@ -1,4 +1,4 @@
-<section class="/Users/dam1mac96/Desktop/oFloral/frontend/src/assets/1111.JPG">
+ <section class="/Users/dam1mac96/Desktop/oFloral/frontend/src/assets/1111.JPG">
   <div class="mask d-flex align-items-center h-100 gradient-custom-3">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -6,44 +6,100 @@
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
 
-                <div class="img1">
-                    <img src="assets/FLORAL (2).png" alt="image sample" style="width: 100%;">
-                 </div>
+              <form  #userPost="ngForm" (ngSubmit)="onRegister(userPost.value)" NG_VALIDATORS NG_VALIDATORS style="width: auto;">
+                <div class="header">
+                    <div class="circle1">
 
-              <h2 class="text-lowercase text-left mb-5">SignUp...</h2>
+                            
+                    </div>
+                    <div class="img1">
+                      <img src="assets/FLORAL (2).png" alt="image sample" style="width: 100%;">
+                    </div>
+                      </div>
+                    
+                   <!-- <div>
+                      <img  class="logo" src="assets/FLORAL (2).png">
+                        </div>    -->
+                        <!-- <div class="img1">
+                          <img src="assets/FLORAL (2).png" alt="image sample" style="width: 100%;">
+                        </div> -->
+                        <h2 class="text-lowercase text-left mb-5">SignUp...</h2>
+                    
+                    
+                    <div class="input-group mb-3"  [class.has-error]="email.invalid && email.touched" [class.has-success]="email.valid ">
+                      
+                      <input type="email" class="form-control"  email id="email" ngModel name="email" placeholder="Enter email..." #email="ngModel" required >
+                    </div>
+                      <span class="help-block" *ngIf="email.errors?.['required'] && email.touched">
+                        <p class="er">Email is required!</p>
+                        <br>
+                      </span>
+                      <span class="help-block" *ngIf="email.errors?.['email'] && email.touched">
+                        <p class="er">Email is invalid! (e.g name@gmail.com)</p>
+                        <br>
+                      </span>
 
-              <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
-                  </div>
+                     
+                       <div class="input-group mb-3"  [class.has-error]="name.invalid && name.touched" [class.has-success]="name.valid ">
+                       
+                             
+                              
+                              <input type="text" class="form-control" minlength="2" name="name" ngModel #name="ngModel" placeholder="Enter your fullnames..." aria-label="Username" aria-describedby="basic-addon1" required>
+                              
+                        </div>
+                        <span class="help-block" *ngIf="name.errors?.['required'] && name.touched">
+                          <p class="er">name is required!</p>
+                          <br>
+                        </span>
+                        <span class="help-block" *ngIf="name.errors?.['minlength']">
+                          <p class="er">name must be at least 2 characters long.</p>
+                          <br>
+                        </span>
+                        
+                      
+                      
+                      <div class="input-group mb-3"  [class.has-error]="password.invalid && password.touched" [class.has-success]="password.valid ">
+                      
+                            
+                             <input type="password" class="form-control" minlength="5" name="password" ngModel #password="ngModel" placeholder="Enter password..." aria-label="password" aria-describedby="basic-addon1" required>
+                       </div>
+                       <span class="help-block" *ngIf="password.errors?.['required'] && password.touched">
+                         <p class="er">password is required!</p>
+                         <br>
+                       </span>
+                       <span class="help-block" *ngIf="password.errors?.['minlength']">
+                         <p class="er">password must be at least 5 characters long.</p>
+                         <br>
+                       </span>
 
 
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter phone number...">
-                  </div>
+                    
+                      <div class="input-group mb-3"  [class.has-error]="confirm.invalid && confirm.touched" [class.has-success]="confirm.valid ">
+                         <input type="password"cd class="form-control" minlength="5" name="confirm" ngModel #confirm="ngModel" placeholder="Confirm password..." aria-label="confirm" aria-describedby="basic-addon1" required>
+                       </div>
+                       <span class="help-block" *ngIf="confirm.errors?.['required'] && confirm.touched">
+                         <p class="er">password is required!</p>
+                         <br>
+                       </span>
+                       <span class="help-block" *ngIf="confirm.errors?.['minlength']">
+                         <p class="er">password must be at least 5 characters long.</p>
+                         <br>
+                       </span>
 
 
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter password...">
+                       <div class="d-flex justify-content-center">
+                        <button type="button"
+                          class="btn btn-primary btn-sm">Continue</button>
+                       </div>
+                  </form>
 
-                  </div>
 
-      
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirm password...">
-                  </div>
-
-                <div class="d-flex justify-content-center">
-                  <button type="button"
-                    class="btn btn-primary btn-sm">Continue</button>
-                </div>
-
-              </form>
-
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+ 
 </section>
+
